@@ -14,7 +14,18 @@ export default {
 }
 </script>
 
-
 <style>
+  nav {
+    background-color: aqua;
+    padding: 2vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
 
 </style>

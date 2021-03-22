@@ -1,14 +1,11 @@
 <template>
   <main>
     <NavBar />
+    <h1>Recursos</h1>
+    <section>
+        <article></article>
+    </section>
     <NavBarFooter />
- <h1>Recursos</h1>
- <section>
-     <article>
-          
-     </article>
- </section>
-
   </main>
 </template>
 

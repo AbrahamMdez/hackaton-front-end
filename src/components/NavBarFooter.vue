@@ -1,8 +1,9 @@
 <template>
   <footer>
       <ul>
-        <li>Tareas</li>
-        <li>Recursos</li>
+        <router-link to="/means">Recursos</router-link>
+        <router-link to="/main">Principal</router-link>
+        <router-link to="/achievements">Tareas</router-link>
       </ul>
   </footer>
 </template>
@@ -15,5 +16,17 @@ export default {
 </script>
 
 <style>
+  footer {
+    background-color: aqua;
+    padding: 2vh;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
 
 </style>

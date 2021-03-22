@@ -2,6 +2,7 @@
     {
     "id": 1,
     "name": "Titulo 1",
+    "description": "Descripcion 1",
     "date": "Descripcion 1",
     "hour": "12:00:00",
     "repetition": "Lunes - Vierns",
@@ -12,6 +13,7 @@
     {
     "id": 2,
     "name": "Titulo 2",
+    "description": "Descripcion 2",
     "date": "Descripcion 2",
     "hour": "12:00:00",
     "repetition": "Lunes - Vierns",
@@ -22,6 +24,7 @@
     {
     "id": 3,
     "name": "Titulo 3",
+    "description": "Descripcion 3",
     "date": "Descripcion 3",
     "hour": "12:00:00",
     "repetition": "Lunes - Vierns",
@@ -32,6 +35,7 @@
     {
     "id": 4,
     "name": "Titulo 4",
+    "description": "Descripcion 4",
     "date": "Descripcion 4",
     "hour": "12:00:00",
     "repetition": "Lunes - Vierns",
@@ -42,6 +46,7 @@
     {
     "id": 5,
     "name": "Titulo 5",
+    "description": "Descripcion 5",
     "date": "Descripcion 5",
     "hour": "12:00:00",
     "repetition": "Lunes - Vierns",
