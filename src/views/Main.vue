@@ -13,7 +13,7 @@
         <h3>{{task.name}}</h3>
         <P>{{task.description}}</P>
 
-        <button>ICON</button>
+        <i class="fas fa-check-circle"></i>
       </article>
     </section>
     <NavBarFooter />
