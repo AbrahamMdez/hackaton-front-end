@@ -1,6 +1,7 @@
 <template>
   <main>
     <NavBar />
+    <TimeAndPrice />
     <NavBarFooter />
  <h1>Logros</h1>
  <section>
@@ -14,13 +15,14 @@
 
 <script>
 import NavBar from '@/components/NavBar.vue'
+import TimeAndPrice from '@/components/TimeAndPrice.vue'
 import NavBarFooter from '@/components/NavBarFooter.vue'
-
 
 export default {
   name: 'Achievements',
   components: {
     NavBar,
+    TimeAndPrice,
     NavBarFooter
   }
 }
