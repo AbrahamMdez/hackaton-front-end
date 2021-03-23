@@ -1,5 +1,13 @@
 # hackaton-front-end
 
+Participantes:
+
+1. Andrea Cevallos
+2. Abraham Menéndez
+3. Marianna Maldonado
+4. Carmen Pérez
+5. Giacomo Corso
+
 Proyect created to F5 Hackaton. We had to do a app for people with Asper-ger's. 
 Here there are views to diferents works and components to the NavBar and Footer.
 
