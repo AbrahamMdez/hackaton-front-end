@@ -31,7 +31,6 @@ export default {
 
     main figure {
         margin: 10vh;
-     
         align-content: center;
 
     }
