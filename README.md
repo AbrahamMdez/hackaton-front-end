@@ -3,7 +3,13 @@
 Proyect created to F5 Hackaton. We had to do a app for people with Asper-ger's. 
 Here there are views to diferents works and components to the NavBar and Footer.
 
-If you want to test the proyect, you have to put '''npm install''' and after that '''npm run serve'''
+If you want to test the proyect, you have to put
+
+'''npm install''' 
+
+and after that 
+
+'''npm run serve'''
 
 ## Project setup
 ```
