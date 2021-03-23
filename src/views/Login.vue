@@ -14,14 +14,21 @@
         <button type="submit">Entrar</button>
       </form>
     </section>
+  <NavBarFooter />
   </main>
 </template>
 
 <script>
+import NavBarFooter from '@/components/NavBarFooter.vue'
+
 import { mapActions } from 'vuex'
 
 export default {
   name: 'Login',
+
+  components: {
+     NavBarFooter
+  },
 
   data() {
     return {
