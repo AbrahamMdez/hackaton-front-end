@@ -1,16 +1,7 @@
 <template>
  <main>
     <NavBar />
-<<<<<<< HEAD
-    <header>
-      <span>Fecha/Hora</span>
-       <div>Tienes: {{ points }} puntos</div>
-       
-     
-    </header>
-=======
     <TimeAndPrice />
->>>>>>> 7e2a115ce4901dee830f9175d9c6efcaeab9c962
 
     <h2>Tareas del dia</h2>
 
@@ -21,9 +12,7 @@
         <P>{{task.description}}</P>
           <div class="checkbox">
             <input type="checkbox" @click="pluspoints" >
-        
           </div>
-         
       </article>
     </section>
     <NavBarFooter />
@@ -59,8 +48,8 @@ export default {
   methods: {
     pluspoints() {
       this.points++;
-    },
-  },
+    }
+  }
 }
 </script>
 

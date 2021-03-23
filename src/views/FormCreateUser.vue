@@ -1,31 +1,36 @@
 <template>
   <main>
-
-    <h1>Acceder</h1>
-
     <section>
       <form>
+        <label>Name</label>
+        <input type="email" placeholder="Nombre...">
+
         <label>Email</label>
-        <input type="email" placeholder="Email...">
+        <input type="text" placeholder="Email...">
 
         <label>Contraseña</label>
         <input type="text" placeholder="Contraseña...">
 
-        <button type="submit">Entrar</button>
+        <button type="submit">Registrarse</button>
       </form>
     </section>
+    <NavBarFooterAdmin />
   </main>
 </template>
 
 <script>
+import NavBarFooterAdmin from '@/components/NavBarFooterAdmin.vue'
+
 export default {
-  name: 'Login',
-  
+    name: 'FormCreateUser',
+
+    components: {
+      NavBarFooterAdmin
+    }
 }
 </script>
 
 <style>
-
   h1 {
     margin-top: 25vh;
     text-align: center;
@@ -51,7 +56,6 @@ export default {
     background: none;
   }
 
-  main section form input:focus,
   main section form input:focus {
     outline: none;
   }
@@ -60,17 +64,13 @@ export default {
     display: none;
   }
 
-  main section form button:nth-child(7),
-  main section form button:nth-child(8) {
+  main section form button:nth-child(7) {
     margin-top: 1vh;
     padding: 1vh;
   }
 
-  main section:nth-child(2) form button:nth-child(5),
-  main section:nth-child(2) form button:nth-child(6) {
+  main section:nth-child(2) form button:nth-child(5) {
     margin-top: 1vh;
     padding: 1vh;
   }
-
-
 </style>

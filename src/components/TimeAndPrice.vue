@@ -1,7 +1,7 @@
 <template>
   <header>
       <span>00:00</span>
-      <button>Tus puntos</button>
+      <h4>Tienes: puntos</h4>
     </header>
 </template>
 
