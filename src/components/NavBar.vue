@@ -93,7 +93,7 @@ input[type=radio]{
 }
   /* nav {
     background-color: aqua;
-    padding: 2vh;
+    padding: 1vh;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -102,6 +102,11 @@ input[type=radio]{
   nav ul {
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
   } */
+=======
+    align-items: center;
+  }
+>>>>>>> 7e2a115ce4901dee830f9175d9c6efcaeab9c962
 
 </style>
