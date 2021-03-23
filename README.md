@@ -5,11 +5,11 @@ Here there are views to diferents works and components to the NavBar and Footer.
 
 If you want to test the proyect, you have to put
 
-'''npm install''' 
+```npm install```
 
 and after that 
 
-'''npm run serve'''
+```npm run serve```
 
 ## Project setup
 ```
