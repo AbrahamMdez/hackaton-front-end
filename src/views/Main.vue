@@ -1,7 +1,16 @@
 <template>
-  <main>
+ <main>
     <NavBar />
+<<<<<<< HEAD
+    <header>
+      <span>Fecha/Hora</span>
+       <div>Tienes: {{ points }} puntos</div>
+       
+     
+    </header>
+=======
     <TimeAndPrice />
+>>>>>>> 7e2a115ce4901dee830f9175d9c6efcaeab9c962
 
     <h2>Tareas del dia</h2>
 
@@ -10,8 +19,11 @@
         <h3>{{task.name}}</h3>
         <p>{{task.advice}}</p>
         <P>{{task.description}}</P>
-
-        <i class="fas fa-check-circle"></i>
+          <div class="checkbox">
+            <input type="checkbox" @click="pluspoints" >
+        
+          </div>
+         
       </article>
     </section>
     <NavBarFooter />
@@ -27,20 +39,28 @@ import Taks from '../assets/data/task.json'
 
 export default {
   name: 'Main',
-  
   components: {
     NavBar,
     TimeAndPrice,
     NavBarFooter
   },
-
-  computed: {
+   data() {
+    return {
+      points: 0
+    }
+  },
+    computed: {
     items() {
       return Taks.map((task) => {
         return task
       })
     }
-  }
+  },
+  methods: {
+    pluspoints() {
+      this.points++;
+    },
+  },
 }
 </script>
 
