@@ -16,7 +16,7 @@ export default {
 <style>
 
   header {
-    background-color: aquamarine;
+    background-color: var(--secondary-color);
     position: fixed;
     top: 4vh;
     width: 100vw;

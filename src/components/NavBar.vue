@@ -97,7 +97,7 @@ input[type=radio]{
 } */
 
 nav {
-    background-color: aqua;
+    background-color: var(--primary-color);
     padding: 1vh;
     position: fixed;
     top: 0;

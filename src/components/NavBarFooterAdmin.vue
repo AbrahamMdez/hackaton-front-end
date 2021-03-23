@@ -15,7 +15,7 @@ export default {
 
 <style>
     footer {
-    background-color: aqua;
+    background-color: var(--primary-color);
     padding: 2vh;
     position: fixed;
     bottom: 0;

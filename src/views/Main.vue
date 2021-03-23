@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
   h2 {
     margin-top: 10vh;
@@ -66,9 +66,11 @@ export default {
   }
 
   section article {
+    background-color: var(--first-task-color);
     border: 2px solid black;
     width: 90vw;
     height: 25vh;
+    border: none;
     margin: 1vh auto 1vh auto;
   }
 

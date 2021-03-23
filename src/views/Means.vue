@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
   h1 {
     margin-top: 10vh;
@@ -48,7 +48,9 @@ export default {
   }
 
   main section article {
-    border: 2px solid black;
+    margin: 1vh auto 1vh auto;
+    border: none;
+    background-color: var(--second-task-color);
     height: 15vh;
     width: 90vw;
   }
