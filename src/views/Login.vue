@@ -4,12 +4,12 @@
     <h1>Acceder</h1>
 
     <section>
-      <form>
+      <form @submit.prevent="login">
         <label>Email</label>
-        <input type="email" placeholder="Email...">
+        <input type="email" v-model="user.email" placeholder="Email...">
 
         <label>Contraseña</label>
-        <input type="text" placeholder="Contraseña...">
+        <input type="text" v-model="user.password" placeholder="Contraseña...">
 
         <button type="submit">Entrar</button>
       </form>
@@ -18,8 +18,39 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   name: 'Login',
+
+  data() {
+    return {
+      user:{
+        email: '',
+        password: ''
+      }
+    }
+  },
+
+  methods: {
+
+    ...mapActions(['saveUser']),
+
+    login() {
+      this.axios.post('https://vast-stream-46882.herokuapp.com/api/login', this.user)
+        .then( res => {
+          console.log(res)
+          const token = res.data.access_token;
+          console.log(token)
+          this.saveUser(token)
+          
+        })
+
+        .catch( e => {
+          console.log(e.response)
+        })
+    }
+  }
   
 }
 </script>

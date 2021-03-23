@@ -4,7 +4,7 @@
         <router-link to="/"><i class="fas fa-user"></i></router-link>
         <router-link to="/means"><i class="fas fa-comment-medical"></i></router-link>
         <router-link to="/main"><i class="fas fa-tasks"></i></router-link>
-        <router-link to="/achievements"><i class="fas fa-award"></i></router-link>
+        <router-link to="/achievements"><i class="fas fa-gift"></i></router-link>
       </ul>
   </footer>
 </template>

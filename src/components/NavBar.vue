@@ -1,102 +1,51 @@
+import { mapActions } from 'vuex';
 <template>
-<!-- <div class="container">
-    <input type="radio" name="s" id="home" checked>
-    <input type="radio" name="s" id="about">
-    <input type="radio" name="s" id="about">
-    <nav>
-      <div class="slider"></div>
-      <label class="home" for="home">
-      <i class="fas fa-home"></i>Home
-      </label>
-      <label class="about" for="about">
-       <i class="fas fa-sign-out-alt"></i>Cerrar Sesión
-      </label>
-    </nav>
-  </div> -->
   <nav>
     <ul>
       <li>Logo</li>
-      <li>Cerrar Sesión</li>
+      <button @click="logout, closeSession()">Cerrar Sesion</button>
     </ul>
   </nav>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   name: 'NavBar',
   
+  methods: {
+    ...mapActions(['closeSession', 'readToken']),
+
+    logout() {
+    console.log()
+    let config = { 
+      method: "get",
+      url: "https://vast-stream-46882.herokuapp.com/api/logout",
+      header: {
+        "Accept": 'Application/json',
+        "Authorization": "Bearer 16|XuBu9l6IWuzahc8jwUFrbwOA3iz7HNEewR0j6tlh" 
+      }
+    }
+    this.axios(config)
+      .then( res => {
+        console.log(res)
+      })
+      .catch ( e => {
+        console.log(e)
+      })
+  },
+  },
+
+  created() {
+    this.readToken();
+  }
 }
 </script>
 
 <style>
-/* 
-nav {
-  border-radius: 5px;
-  display: flex;
-  text-align: center;
-  position: relative;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-}
 
-nav label {
-  width: 100%;
-  height: 100%;
-  line-height: 60px;
-  font-size: 18px;
-  font-weight: 400;
-  border-radius: 5px;
-  margin: 0 5px;
-  color: #6895bb;
-  position: fixed;
-  z-index: 1;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-nav label:hover{
-background: #6895bb;
-}
-
-nav label i{
-  margin-right: 4px;
-}
-
-nav .slider{
-  position: absolute;
-  height: 100%;
-  width: 20%;
-  background: #6895bb;
-  left: 0;
-  top: 0;
-  border-radius: 5px;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  z-index: 1;
-}
-#home:checked ~ nav label.home,
-#blog:checked ~ nav label.blog,
-#code:checked ~ nav label.code,
-#help:checked ~ nav label.help,
-#about:checked ~ nav label.about{
-  color: #fff;
-}
-#blog:checked ~ nav .slider{
-left: 20%;
-}
-#code:checked ~ nav .slider{
-left: 40%;
-}
-#help:checked ~ nav .slider{
-left: 60%;
-}
-#about:checked ~ nav .slider{
-left: 80%;
-}
-input[type=radio]{
-  display: none;
-} */
-
-nav {
+  nav {
     background-color: var(--primary-color);
     padding: 1vh;
     position: fixed;
