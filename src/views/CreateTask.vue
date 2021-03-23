@@ -57,53 +57,6 @@ export default {
 </script>
 
 <style scoped>
-    /* main div {
-        display: grid;
-        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-        grid-template-rows: 25vh 25vh 25vh 25vh;       
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    main div aside {
-        margin-top: 5vh;
-        background-color: red;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        height: 70vh;
-    }
-
-    main div section {
-        background-color: yellow;
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 4;
-        margin-right: 5vh;
-    }
-
-    main div section form {
-        height: inherit;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    main div section form input {
-        width: inherit;
-        padding: 4vh 0 0 1vh;
-        margin-top: 1vh;
-        font-size: 1.5rem;
-        border: none;
-        border-bottom: 2px solid black;
-        background: none;
-    }
-
-    main div section form label {
-    display: none;
-  } */
 
   main div {
       display: flex;
