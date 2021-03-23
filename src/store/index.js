@@ -14,8 +14,7 @@ export default new Vuex.Store({
       if(payload === '') {
         state.user = ''
       }else {
-        state.user = decode(payload)
-        router.push({ name: 'task'})
+        state.user = payload
       }
     }
   },

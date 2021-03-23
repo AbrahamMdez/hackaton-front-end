@@ -43,7 +43,6 @@ export default {
           const token = res.data.access_token;
           console.log(token)
           this.saveUser(token)
-          
         })
 
         .catch( e => {

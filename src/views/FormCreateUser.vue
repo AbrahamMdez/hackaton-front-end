@@ -1,5 +1,6 @@
 <template>
   <main>
+    <NavBar />
     <section>
       <form>
         <label>Name</label>
@@ -19,18 +20,20 @@
 </template>
 
 <script>
+import NavBar from '@/components/NavBar.vue'
 import NavBarFooterAdmin from '@/components/NavBarFooterAdmin.vue'
 
 export default {
     name: 'FormCreateUser',
 
     components: {
+      NavBar,
       NavBarFooterAdmin
     }
 }
 </script>
 
-<style>
+<style scoped>
   h1 {
     margin-top: 25vh;
     text-align: center;

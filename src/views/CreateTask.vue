@@ -56,7 +56,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     /* main div {
         display: grid;
         grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
