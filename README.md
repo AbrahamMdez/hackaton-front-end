@@ -1,5 +1,9 @@
 # hackaton-front-end
 
+Hackaton F5: 
+Deploy de backend en heroku (https://vast-stream-46882.herokuapp.com/)
+GitHub Repositorio Frontend (https://github.com/AbrahamMdez/hackaton-front-end)
+
 Participantes:
 
 1. Andrea Cevallos
